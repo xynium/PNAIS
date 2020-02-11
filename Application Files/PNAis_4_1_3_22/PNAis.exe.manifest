@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="PNAis.exe" version="4.1.3.22" publicKeyToken="b9d01a1da68dd701" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="paquebot_11699.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="PNAis" version="4.5.1.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="PNAis.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Options du manifeste de contrôle de compte d'utilisateur
+          Si vous souhaitez modifier le niveau du contrôle de compte d'utilisateur Windows, remplacez le 
+          nœud requestedExecutionLevel par l'une des propositions suivantes :
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si vous souhaitez utiliser la virtualisation de fichiers et du Registre pour la 
+         compatibilité descendante, supprimez le nœud requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PNAis.exe" size="94720">
+      <assemblyIdentity name="PNAis" version="4.5.1.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>G8Rb08jr9PtOPRvYoD9vLOXeBxg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="libusb-1.0.dll" size="68096">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Al6aJP3hBLEmKYJXuLBmJQmyGmY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="paquebot_11699.ico" size="766">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+OhRyblsh/QMcGaZngV+/SHFgiA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="PNAis.exe.config" size="144">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>cpzNzlRjZspwKGLNlX6RAlU3880=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="rtlsdr.dll" size="44032">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>p22htE98PEI11u1rFTCQW/k5PBI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=OBSEXULINE\Obesexium" issuerKeyHash="51b9b6b7b5ea07de332001b8998ae9c52f1381dd" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>z1xlqeKXAo2miZt94hY2jxKeSg4=</DigestValue></Reference></SignedInfo><SignatureValue>g0t67PgkZUvUQtt3887dTYwvyRkKerKG+AMv20CYp8Gny3L9nTbRX3yXGFyjWkdVxo3nWVPyjj3sa025k1ctm/tKmwyanSexHMK2/rTCr/xqjGRkTUHlsq0CaUwiqSGFwPUW+wyXVQNe7DQFEMgh3bLeitT2C286WQImBHTzNEs=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>rneW60W1NP6yL8dvA/h4qRMW2IZatuF2X6DqR60yt6B3+JYR0chYuj+BYwSNL9BoN1uWlP/dQTjCQ+s1/F5+8969zkceXQex2su+IpSV4noB1Ds+QIyYZjPHlBJR9QzOewOBUXPgO0TRTcVpGLEfw11c0kwwdjN3+l2RJpxnlbM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="0e4a9e128f3616e27d9b89a68d0297e2a9655ccf" Description="" Url=""><as:assemblyIdentity name="PNAis.exe" version="4.1.3.22" publicKeyToken="b9d01a1da68dd701" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=OBSEXULINE\Obesexium</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>jrTacyKFkWPYiUeHJjnLiSa9VPA=</DigestValue></Reference></SignedInfo><SignatureValue>atya5FfwxejlxU8YFPgqpsKPKtOw5Dswalu5EY5AEDIHNcnMhbrzfsAShhhpcw4/n+AYd9JYcFjYrw1PwWRSOu5z+Gi2QD229TWs6zbjVHLvOxcV/YBhHMEvgYoxoZgUBJLtz46Bk0Ne3ZaOhZ2CjiY+6nq3C86u+ySG6nOnbPs=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>rneW60W1NP6yL8dvA/h4qRMW2IZatuF2X6DqR60yt6B3+JYR0chYuj+BYwSNL9BoN1uWlP/dQTjCQ+s1/F5+8969zkceXQex2su+IpSV4noB1Ds+QIyYZjPHlBJR9QzOewOBUXPgO0TRTcVpGLEfw11c0kwwdjN3+l2RJpxnlbM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQEd21pfG6dYJGLk9F6a9XgzANBgkqhkiG9w0BAQUFADAzMTEwLwYDVQQDHigATwBCAFMARQBYAFUATABJAE4ARQBcAE8AYgBlAHMAZQB4AGkAdQBtMB4XDTE1MDUyODA4NTA1MVoXDTE2MDUyNzE0NTA1MVowMzExMC8GA1UEAx4oAE8AQgBTAEUAWABVAEwASQBOAEUAXABPAGIAZQBzAGUAeABpAHUAbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEArneW60W1NP6yL8dvA/h4qRMW2IZatuF2X6DqR60yt6B3+JYR0chYuj+BYwSNL9BoN1uWlP/dQTjCQ+s1/F5+8969zkceXQex2su+IpSV4noB1Ds+QIyYZjPHlBJR9QzOewOBUXPgO0TRTcVpGLEfw11c0kwwdjN3+l2RJpxnlbMCAwEAATANBgkqhkiG9w0BAQUFAAOBgQCCsXy5I7JTdOa25bRRxa4NW+Gd8maGWhHYBxXUcSfIwhMCSH99Vtz/qJd9lb2DowJj56cr3QCEOH54/2CInlWfPQkjql7w22HLDVq3NzdWzEsacz43N5XvkneDnN0unHDZP0v36NI+df+8wza0x/99jBD9yyrKuezKK6ZUWPvHyA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
